@@ -14,10 +14,10 @@ class Method:
     return radian*(180/math.pi)
     
   try:
-    radian = float(input("Input degrees: "))
+    radian = float(input("Input radian: "))
     print(RadianToDegree(radian))
   except IOError:
     print("Provide a Numerical value")
     
-  #for example 1 degree is approximately 0.0174533 Radian
-  print(RadianToDegree(1)) # output is 0.01745329251..
+  #for example 1 radian is approximately 57.2958 Degrees
+  print(RadianToDegree(1)) # output is 57.2957795131..
