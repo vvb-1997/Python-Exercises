@@ -11,12 +11,13 @@ class Method:
   """
   
   def DegreeToRadian(degree):
-    return degree*math.pi/180
+    return degree*(math.pi/180)
+  
   try:
     degree = float(input("Input degrees: "))
-    DegreeToRadian(degree,1/57.3)
+    DegreeToRadian(degree)
   except IOError:
     print("Provide a Numerical value")
     
   #for example 1 degree is approximately 0.0174533 Radian
-  DegreeToRadian(1,1/57.3) # output is 0.01745329251..
+  DegreeToRadian(1) # output is 0.01745329251..
